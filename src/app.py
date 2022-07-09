@@ -16,8 +16,8 @@ from .routers import post , user , auth , like
 
 app = FastAPI()
 
-origins = ["https://www.google.com"] # allowed domains
-# origins =["*"]  # for make a public api
+# origins = ["https://www.google.com"] # allowed domains
+origins =["*"]  # for make a public api
 
 app.add_middleware(
     CORSMiddleware,
